@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Este é o título da página</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+<!--Hack
+    <script>
+        let tmplt = `<h1>%TAG%</h1><%TAG%>Este texto está escrito utilizando a tag %TAG% como tag</%TAG%>
+            <hr/><br/>`;
+        let tags = ['strong', 'em', 'blockquote', 'q', 'abbr', 'cite', 'dfn', 'address', 'ins', 'del', 's', 'sup', 'sub'];
+        let html = `<h1>Exercicio 1 - textos em HTML</h1>
+    <p>Esta é a lista de atividades para entender a utilização das tags na estruturação de um texto</p>
+    <br />
+    <br />`;
+        tags.forEach(tag => {
+            html += tmplt.replace(/%TAG%/g, tag) + '\n';
+        })
+        document.body.innerHTML = html;
+    </script>
+-->
+    <h1>Exercicio 1 - textos em HTML</h1>
+    <p>Esta é a lista de atividades para entender a utilização das tags na estruturação de um texto</p>
+    <br /><br />
+    <h1>strong</h1><strong>Este texto está escrito utilizando a tag strong como tag</strong>
+    <hr><br>
+    <h1>em</h1><em>Este texto está escrito utilizando a tag em como tag</em>
+    <hr><br>
+    <h1>blockquote</h1>
+    <blockquote>Este texto está escrito utilizando a tag blockquote como tag</blockquote>
+    <hr><br>
+    <h1>q</h1><q>Este texto está escrito utilizando a tag q como tag</q>
+    <hr><br>
+    <h1>abbr</h1><abbr>Este texto está escrito utilizando a tag abbr como tag</abbr>
+    <hr><br>
+    <h1>cite</h1><cite>Este texto está escrito utilizando a tag cite como tag</cite>
+    <hr><br>
+    <h1>dfn</h1><dfn>Este texto está escrito utilizando a tag dfn como tag</dfn>
+    <hr><br>
+    <h1>address</h1>
+    <address>Este texto está escrito utilizando a tag address como tag</address>
+    <hr><br>
+    <h1>ins</h1><ins>Este texto está escrito utilizando a tag ins como tag</ins>
+    <hr><br>
+    <h1>del</h1><del>Este texto está escrito utilizando a tag del como tag</del>
+    <hr><br>
+    <h1>s</h1><s>Este texto está escrito utilizando a tag s como tag</s>
+    <hr><br>
+    <h1>sup</h1><sup>Este texto está escrito utilizando a tag sup como tag</sup>
+    <hr><br>
+    <h1>sub</h1><sub>Este texto está escrito utilizando a tag sub como tag</sub>
+    <hr><br>
+</body>
+
+
+</html>
