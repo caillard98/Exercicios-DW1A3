@@ -37,6 +37,18 @@ body {
   right: 0px;
   position: absolute;
 }
+#sidebar_ex2 {
+  background-color: rgb(50, 164, 231);
+  color: rgb(255, 255, 255);
+  bottom: auto;
+  width: 420px;
+  height: 290px;
+  padding: auto;
+  top: 0px;
+  right: 0px;
+  border-radius: 10px;
+  position: absolute;
+}
 #bottom {
   border: 1px solid rgb(212, 212, 212);
   background-color: rgb(241, 241, 241);
@@ -81,33 +93,23 @@ a {
 a:hover {
   text-decoration: none;
 }
-@media (max-width: 800px) {
-  #sidebar {
-    width: auto;
-    position: relative;
-  }
-  #main {
-    margin-right: 0px;
-  }
-}
-@media (max-width: 600px) {
-  #menubar {
-    width: auto;
-    float: none;
-  }
-  #main {
-    margin: 0px;
-  }
-}
+#imgCarro ,
 #aifolou{
     max-width: 90%;
     max-height: 90%;
     margin: 10px;
     border-radius: 10px;
 }
+#imgCarro {
+  margin-left: 20px;
+  margin-top: 20px;
+}
 #mini-text {
     font-size: 10px;
     font-family: 'Consolas';
     line-height: 100%;
     white-space: pre-wrap;
+}
+#erro {
+  color: red;
 }
