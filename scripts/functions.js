@@ -40,6 +40,7 @@ pact? How do we do it? - I'll sting you, you step on me.- That just kills you tw
     }
     element = document.getElementById("aifolou");
     if(!!element){
+        iFolou = 1;
         element.addEventListener('click', aifolou)
     }
     if (window.location.href.includes('ex1')){
@@ -54,11 +55,12 @@ pact? How do we do it? - I'll sting you, you step on me.- That just kills you tw
 }
 
 function aifolou(e){
-    i = parseInt(e.target.src[e.target.src.indexOf('.')-1]);
-    if(i < 3){
-        e.target.src = e.target.src.replace(`aifolou${i++}`, `aifolou${i}`);
+    if(iFolou < 3){
+        e.target.src = e.target.src.replace(`aifolou${iFolou}`, `aifolou${iFolou+1}`);
+        iFolou++;
     } else {
-        e.target.src = e.target.src.replace(`aifolou${i}`, 'aifolou1');
+        e.target.src = e.target.src.replace(`aifolou${iFolou}`, 'aifolou1');
+        iFolou = 1;
     }
 }
 
