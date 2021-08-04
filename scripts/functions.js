@@ -56,9 +56,9 @@ pact? How do we do it? - I'll sting you, you step on me.- That just kills you tw
 function aifolou(e){
     i = parseInt(e.target.src[e.target.src.indexOf('.')-1]);
     if(i < 3){
-        e.target.src = e.target.src.replace(i++, i);
+        e.target.src = e.target.src.replace(`aifolou${i++}`, `aifolou${i}`);
     } else {
-        e.target.src = e.target.src.replace(i, 1);
+        e.target.src = e.target.src.replace(`aifolou${i}`, 'aifolou1');
     }
 }
 
