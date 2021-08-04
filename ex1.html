@@ -1,0 +1,35 @@
+<html>
+    <head>
+    
+    <link rel="stylesheet" href="style/prova.css"/>
+    <script src="scripts/functions.js"></script>
+
+    </head>
+    <body>
+    <div class="container wrapper">
+      <div id="top">
+        <h1>Prova de DW1A3</h1>
+        <p>Caio Gagliardi Matos <i>SP1766082</i></p>
+      </div>
+      <div class="wrapper">
+       <div id="menubar">
+         <ul id="menulist">
+           <li class="menuitem" onclick="window.location.href='./index.html#'">Página inicial
+           </li><li class="menuitem" onclick="window.location.href='./ex1.html'">Exercício 1
+           </li><li class="menuitem" onclick="window.location.href='./ex2.html'">Exercício 2
+         </li></ul>
+        </div>
+        <div id="main">
+            <h1>Exercício 1 - Restaurante</h1><br>
+            <p>Insira o valor por kg de consumo e peso do consumo (em gramas) do cliente:</p>
+            <label id="lblValorKg"><b>Valor:</b> R$</label><input type="number" id="valorKg" class="ex1_input"> por kg<br>
+            <label id="lblPeso"><b>Peso consumo:</b> </label><input type="number" id="peso" class="ex1_input"> g
+            <br><br>
+            <p><b>Valor a cobrar:</b> R$<label id="lblValorCobrado"></label></p><br>
+            <input type="button" id="btnVender" value="Realizar venda!"><br><br>
+            <input type="button" id="btnListar" value="Listar vendas">
+            <p id="listVendas"></p>
+        </div>
+    </div>    
+    </body>
+</html>

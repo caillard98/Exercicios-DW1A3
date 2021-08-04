@@ -1,0 +1,113 @@
+body {
+  font: 100% / 24px 'Times New Roman', Verdana;
+}
+
+.wrapper {
+  position: relative;
+  overflow: auto;
+}
+#top,
+#sidebar,
+#bottom,
+.menuitem {
+  border-radius: 15px;
+  margin: 4px;
+  text-align: center;
+}
+#top {
+  background-color: rgb(65, 166, 224);
+  color: rgb(255, 255, 255);
+  padding: 15px;
+}
+#menubar {
+  width: 200px;
+  float: left;
+}
+#main {
+  padding: 10px;
+  margin: 0px 210px;
+}
+#sidebar {
+  background-color: rgb(50, 164, 231);
+  color: rgb(255, 255, 255);
+  width: 220px;
+  height: 300px;
+  bottom: auto;
+  top: 0px;
+  right: 0px;
+  position: absolute;
+}
+#bottom {
+  border: 1px solid rgb(212, 212, 212);
+  background-color: rgb(241, 241, 241);
+  text-align: center;
+  padding: 10px;
+  font-size: 70%;
+  line-height: 14px;
+}
+#top h1,
+#top p {
+  margin: 0px;
+  padding: 0px;
+}
+#menulist {
+  margin: 0px;
+  padding: 0px;
+  border: 1px dotted rgb(0,0,0);
+  border-radius: 15px;
+}
+.menuitem {
+  background-color: rgb(241, 241, 241);
+  border: 1px solid rgb(212, 212, 212);
+  list-style-type: none;
+  padding: 2px;
+  cursor: pointer;
+}
+.menuitem:hover {
+  background-color: rgb(255, 255, 255);
+}
+.menuitem:first-child {
+  background-color: rgb(4, 170, 109);
+  color: white;
+  font-weight: bold;
+}
+.ex1_input {
+  width: 60px;
+}
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  #sidebar {
+    width: auto;
+    position: relative;
+  }
+  #main {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 600px) {
+  #menubar {
+    width: auto;
+    float: none;
+  }
+  #main {
+    margin: 0px;
+  }
+}
+#aifolou{
+    max-width: 90%;
+    max-height: 90%;
+    margin: 10px;
+    border-radius: 10px;
+}
+#mini-text {
+    font-size: 10px;
+    font-family: 'Consolas';
+    line-height: 100%;
+    white-space: pre-wrap;
+}
